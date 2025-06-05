@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
 const Texureloader = new THREE.TextureLoader();
-Texureloader.load('imgs/8K_stars.jpg', function (texture) {
+Texureloader.load('imgs/2K_stars.jpg', function (texture) {
     scene.background = texture;
 });
 const camera = new THREE.PerspectiveCamera(
@@ -92,9 +92,6 @@ function animateOrbit(planet, planetPositionX, planetRotationSpeed) {
 }
 
 function createSolarSystemePlanet(planetSize, planetTextureImg, planetPositionX, planetRotationSpeed, sceneHierarchy) {
-    console.log('sceneHierarchy:', sceneHierarchy);
-    console.log('sceneHierarchy.add:', sceneHierarchy?.add);
-    
     
     // create plane
     const planet = newPlanet(planetSize, planetPositionX, planetTextureImg, sceneHierarchy);
