@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
 const Texureloader = new THREE.TextureLoader();
-Texureloader.load('imgs/2K_stars.jpg', function (texture) {
+Texureloader.load('imgs/2K_mercury.jpg', function (texture) {
     scene.background = texture;
 });
 const camera = new THREE.PerspectiveCamera(
